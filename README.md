@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/PeterGeorge7/Sales-Weather-Analysis-ALX1_AIS4_S2e-Group2/blob/main/Project%20Architecture.png" alt=""/>
+</p>
 
 # Sales Analysis Weather
 
