@@ -23,11 +23,11 @@ The project was developed using the following technologies:
 
 ## Data Sources
 1. **Weather Data:** Obtained through an API.
-2. **Sales and Business Data:** CSV files stored in Azure Data Lake Gen2, containing details of sales transactions, product information, customer demographics, and store data.
+2. **Sales and Business Data:** Data from Transactions in Azure SQL Server
 
 ## Data Flow
 The data flows through multiple layers in the pipeline:
-1. **Bronze Layer (Raw Data):** This layer stores the raw parquet data collected from the API and CSV files. No transformations are applied at this stage.
+1. **Bronze Layer (Raw Data):** This layer stores the raw parquet data collected from the API and Azure Sql Table. No transformations are applied at this stage.
 2. **Silver Layer (Processed Data):** Data in the silver layer is processed using Databricks notebooks. We apply necessary transformations like cleaning, filtering, and adding metadata. Data is stored in Delta format.
 3. **Gold Layer (Ready for Consumption):** In this layer, the cleaned and fully processed data is prepared for consumption, i.e., analytics, reporting, and machine learning models. Data is stored in Delta format for efficiency and ease of querying.
 
